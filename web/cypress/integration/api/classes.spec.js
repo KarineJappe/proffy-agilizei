@@ -23,8 +23,7 @@ context('Classes endpoint', () => {
             }
         }).then((response) => {
             expect(response.status).to.be.equal(201)
-            expect(response.duration).lessThan(20)
-
+          
             expect(response.body[0])
                 .to.have.property('class_id')
                 .to.be.a('number')
